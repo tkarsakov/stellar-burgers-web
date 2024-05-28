@@ -19,23 +19,26 @@ public class RegisterPage extends BasePage {
     @FindBy(xpath = "//button[text()=\"Зарегистрироваться\"]")
     private WebElement registerButton;
 
+    @FindBy(xpath = "//p[text()=\"Некорректный пароль\"]")
+    private WebElement incorrectPasswordErrorMessage;
+
     public RegisterPage(WebDriver driver) {
         super(driver);
     }
 
-    @Step("Вводим имя нового пользователя {name}")
+    @Step("Вводим имя {name} нового пользователя")
     public RegisterPage typeName(String name) {
         nameInput.sendKeys(name);
         return this;
     }
 
-    @Step("Вводим почту нового пользователя {email}")
+    @Step("Вводим почту {email} нового пользователя")
     public RegisterPage typeEmail(String email) {
         emailInput.sendKeys(email);
         return this;
     }
 
-    @Step("Вводим пароль нового пользователя {password}")
+    @Step("Вводим пароль {password} нового пользователя")
     public RegisterPage typePassword(String password) {
         passwordInput.sendKeys(password);
         return this;
@@ -45,5 +48,10 @@ public class RegisterPage extends BasePage {
     public LogInPage clickRegister() {
         registerButton.click();
         return new LogInPage(driver);
+    }
+
+    @Step("Проверяем присутствует ли ошибка введения пароля")
+    public Boolean isIncorrectPasswordErrorPresent() {
+        return incorrectPasswordErrorMessage.isDisplayed();
     }
 }
