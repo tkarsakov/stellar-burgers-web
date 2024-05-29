@@ -18,7 +18,7 @@ public class Steps {
 
     private final RequestFactory requestFactory = new RequestFactory();
 
-    @Step("Регистрация пользователя {newUser}")
+    @Step("Регистрация пользователя {user}")
     public Response registerUser(User user) {
         RequestParameter requestBody = new RequestParameter(ParameterType.BODY);
         RequestParameter requestHeader = new RequestParameter(ParameterType.HEADER);

@@ -14,8 +14,8 @@ public class LogInTest extends BaseTest {
         MainPage mainPage = new MainPage(driver);
         LogInPage logInPage = mainPage.clickLogInButton();
 
-        logInPage.typeEmail(user.getEmail())
-                .typePassword(user.getPassword())
+        logInPage.typeEmail(createdUser.getEmail())
+                .typePassword(createdUser.getPassword())
                 .clickLogInButton();
 
         Assert.assertTrue("Main page isn't open after logging in", mainPage.isPageOpened());
@@ -27,8 +27,8 @@ public class LogInTest extends BaseTest {
         MainPage mainPage = new MainPage(driver);
         LogInPage logInPage = mainPage.getNavBar().clickPersonalPageLink(false);
 
-        logInPage.typeEmail(user.getEmail())
-                .typePassword(user.getPassword())
+        logInPage.typeEmail(createdUser.getEmail())
+                .typePassword(createdUser.getPassword())
                 .clickLogInButton();
 
         Assert.assertTrue("Main page isn't open after logging in", mainPage.isPageOpened());
@@ -42,8 +42,8 @@ public class LogInTest extends BaseTest {
         RegisterPage registerPage = logInPage.clickRegisterLink();
         registerPage.clickLogInLink();
 
-        logInPage.typeEmail(user.getEmail())
-                .typePassword(user.getPassword())
+        logInPage.typeEmail(createdUser.getEmail())
+                .typePassword(createdUser.getPassword())
                 .clickLogInButton();
 
         Assert.assertTrue("Main page isn't open after logging in", mainPage.isPageOpened());
@@ -57,8 +57,8 @@ public class LogInTest extends BaseTest {
         RestorePasswordPage restorePasswordPage = logInPage.clickRestorePasswordLink();
         restorePasswordPage.clickLogInLink();
 
-        logInPage.typeEmail(user.getEmail())
-                .typePassword(user.getPassword())
+        logInPage.typeEmail(createdUser.getEmail())
+                .typePassword(createdUser.getPassword())
                 .clickLogInButton();
 
         Assert.assertTrue("Main page isn't open after logging in", mainPage.isPageOpened());

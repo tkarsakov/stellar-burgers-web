@@ -23,15 +23,17 @@ import java.util.Optional;
 import static com.intexsoft.stellarburgersweb.service.PropertiesFile.CONFIG;
 
 public abstract class BaseTest {
+    private final Steps steps = new Steps();
     protected WebDriver driver;
-    protected String accessToken;
-    protected Steps steps = new Steps();
-    protected User user;
+    protected User createdUser;
+    private String accessToken;
 
     @Before
     public void setUp() {
-        user = User.buildFakeUser();
-        accessToken = steps.registerUser(user).path("accessToken");
+        createdUser = User.buildFakeUser();
+        Response response = steps.registerUser(createdUser);
+        Assert.assertEquals("Unexpected response to user creation request", 200, response.statusCode());
+        accessToken = response.path("accessToken");
     }
 
     @Before
@@ -71,7 +73,7 @@ public abstract class BaseTest {
         Optional<Response> responseOptional = steps.deleteCreatedUser(accessToken);
         if (responseOptional.isPresent()) {
             Response response = responseOptional.get();
-            Assert.assertEquals(response.statusCode(), 202);
+            Assert.assertEquals("Unexpected response to user deletion request", response.statusCode(), 202);
         }
         driver.quit();
     }
