@@ -1,9 +1,16 @@
 package com.intexsoft.stellarburgersweb.page;
 
+import com.intexsoft.stellarburgersweb.service.PropertiesService;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+import static com.intexsoft.stellarburgersweb.service.PropertiesFile.CONFIG;
 
 public class RegisterPage extends BasePage {
 
@@ -24,6 +31,14 @@ public class RegisterPage extends BasePage {
 
     public RegisterPage(WebDriver driver) {
         super(driver);
+    }
+
+    @Step("Проверяем открыта ли страница регистрации")
+    @Override
+    public Boolean isPageOpened() {
+        String registerPageUrl = PropertiesService.getProperty(CONFIG, "url") + "register";
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.urlToBe(registerPageUrl));
+        return registerPageUrl.equals(driver.getCurrentUrl());
     }
 
     @Step("Вводим имя {name} нового пользователя")

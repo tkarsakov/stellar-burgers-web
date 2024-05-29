@@ -5,16 +5,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
-    protected WebDriver driver;
 
-    private NavBar navBar;
+    protected final WebDriver driver;
+
+    private final NavBar navBar;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
+        this.navBar = new NavBar(driver);
+        this.init(driver);
     }
 
     public NavBar getNavBar() {
         return navBar;
     }
+
+    public void init(WebDriver driver) {
+        PageFactory.initElements(driver, this);
+    }
+
+    public abstract Boolean isPageOpened();
 }
