@@ -27,4 +27,30 @@ public class PersonalPageTest extends BaseTest {
 
         Assert.assertTrue("Log in page isn't open after clicking on personal page link without logging in", logInPage.isPageOpened());
     }
+
+    @Test
+    public void goToPersonalPageThenGoToMainPageExpectToSeeMainPage() {
+        MainPage mainPage = new MainPage(driver);
+        LogInPage logInPage = mainPage.clickLogInButton();
+        logInPage.typeEmail(createdUser.getEmail())
+                .typePassword(createdUser.getPassword())
+                .clickLogInButton();
+        PersonalPage personalPage = mainPage.getNavBar().clickPersonalPageLink(true);
+        personalPage.getNavBar().clickConstructorLink();
+
+        Assert.assertTrue("Main page isn't opened after clicking 'Constructor' link", mainPage.isPageOpened());
+    }
+
+    @Test
+    public void logInThenLogOutExpectToSeeLogInPage() {
+        MainPage mainPage = new MainPage(driver);
+        LogInPage logInPage = mainPage.clickLogInButton();
+        logInPage.typeEmail(createdUser.getEmail())
+                .typePassword(createdUser.getPassword())
+                .clickLogInButton();
+        PersonalPage personalPage = mainPage.getNavBar().clickPersonalPageLink(true);
+        personalPage.clickLogOutButton();
+
+        Assert.assertTrue("Login page isn't opened after logging out", logInPage.isPageOpened());
+    }
 }

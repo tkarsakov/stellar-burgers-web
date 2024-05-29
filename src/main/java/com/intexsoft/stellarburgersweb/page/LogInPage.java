@@ -48,6 +48,8 @@ public class LogInPage extends BasePage {
     @Step("Нажимаем кнопку 'Войти'")
     public MainPage clickLogInButton() {
         logInButton.click();
+        //Ждем пока закончится анимация после логина
+        new WebDriverWait(driver, Duration.ofSeconds(2));
         return new MainPage(driver);
     }
 

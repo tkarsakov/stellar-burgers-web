@@ -2,12 +2,17 @@ package com.intexsoft.stellarburgersweb.component;
 
 import com.intexsoft.stellarburgersweb.page.BasePage;
 import com.intexsoft.stellarburgersweb.page.LogInPage;
+import com.intexsoft.stellarburgersweb.page.MainPage;
 import com.intexsoft.stellarburgersweb.page.PersonalPage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class NavBar {
 
@@ -33,11 +38,18 @@ public class NavBar {
     @SuppressWarnings("unchecked")
     @Step("Кликаем на ссылку 'Личный кабинет' в навбаре")
     public <T extends BasePage> T clickPersonalPageLink(Boolean isUserLoggedIn) {
+        new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.elementToBeClickable(personalPageLink));
         personalPageLink.click();
         if (isUserLoggedIn) {
             return (T) new PersonalPage(driver);
         } else {
             return (T) new LogInPage(driver);
         }
+    }
+
+    @Step("Кликаем на ссылку 'Конструктор' в навбаре")
+    public MainPage clickConstructorLink() {
+        constructorLink.click();
+        return new MainPage(driver);
     }
 }
