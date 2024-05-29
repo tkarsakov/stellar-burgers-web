@@ -1,9 +1,7 @@
 package com.intexsoft.stellarburgersweb.model;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
 import com.github.javafaker.Faker;
-import com.intexsoft.stellarburgersweb.service.PropertiesService;
-
-import static com.intexsoft.stellarburgersweb.service.PropertiesFile.TESTDATA;
 
 public class User {
     private String email;
@@ -25,14 +23,6 @@ public class User {
         );
     }
 
-    public static User buildFromProperties() {
-        return new User(
-                PropertiesService.getProperty(TESTDATA, "user.email"),
-                PropertiesService.getProperty(TESTDATA, "user.name"),
-                PropertiesService.getProperty(TESTDATA, "user.password")
-        );
-    }
-
     public String getEmail() {
         return email;
     }
@@ -41,6 +31,7 @@ public class User {
         this.email = email;
     }
 
+    @JsonGetter
     public String getName() {
         return name;
     }
@@ -49,10 +40,12 @@ public class User {
         this.name = name;
     }
 
+    @JsonGetter
     public String getPassword() {
         return password;
     }
 
+    @JsonGetter
     public void setPassword(String password) {
         this.password = password;
     }

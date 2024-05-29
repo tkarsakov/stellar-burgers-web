@@ -1,7 +1,11 @@
 package com.intexsoft.stellarburgersweb;
 
+import com.intexsoft.stellarburgersweb.api.Steps;
+import com.intexsoft.stellarburgersweb.model.User;
 import com.intexsoft.stellarburgersweb.service.PropertiesService;
+import io.restassured.response.Response;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
@@ -14,11 +18,21 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.Optional;
 
 import static com.intexsoft.stellarburgersweb.service.PropertiesFile.CONFIG;
 
 public abstract class BaseTest {
     protected WebDriver driver;
+    protected String accessToken;
+    protected Steps steps = new Steps();
+    protected User user;
+
+    @Before
+    public void setUp() {
+        user = User.buildFakeUser();
+        accessToken = steps.registerUser(user).path("accessToken");
+    }
 
     @Before
     public void driverSetUp() {
@@ -54,6 +68,11 @@ public abstract class BaseTest {
 
     @After
     public void tearDown() {
+        Optional<Response> responseOptional = steps.deleteCreatedUser(accessToken);
+        if (responseOptional.isPresent()) {
+            Response response = responseOptional.get();
+            Assert.assertEquals(response.statusCode(), 202);
+        }
         driver.quit();
     }
 }

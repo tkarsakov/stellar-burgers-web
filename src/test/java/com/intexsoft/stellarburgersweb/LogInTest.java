@@ -1,6 +1,5 @@
 package com.intexsoft.stellarburgersweb;
 
-import com.intexsoft.stellarburgersweb.model.User;
 import com.intexsoft.stellarburgersweb.page.LogInPage;
 import com.intexsoft.stellarburgersweb.page.MainPage;
 import com.intexsoft.stellarburgersweb.page.RegisterPage;
@@ -9,8 +8,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LogInTest extends BaseTest {
-
-    private User user = User.buildFromProperties();
 
     @Test
     public void logInFromMainPageLogInButtonExpectSuccessfulLogin() {
