@@ -10,21 +10,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class LogInPage extends BasePage {
-
+    //Заголовок над формой логина
     @FindBy(xpath = "//h2[text()=\"Вход\"]")
     private WebElement logInHeader;
-
+    //Поле для почты
     @FindBy(xpath = "//div/label[text()=\"Email\"]/following-sibling::input")
     private WebElement emailInput;
-
+    //Поле для пароля
     @FindBy(xpath = "//input[@type=\"password\"]")
     private WebElement passwordInput;
-
+    //Кнопка войти
     @FindBy(xpath = "//button[text()=\"Войти\"]")
     private WebElement logInButton;
-
+    //Ссылка "Зарегистрироваться" под формой логина
     @FindBy(xpath = "//a[@href=\"/register\"]")
     private WebElement registerLink;
+    //Ссылка "Восстановить пароль" под формой логина
+    @FindBy(xpath = "//a[text()=\"Восстановить пароль\"]")
+    private WebElement restorePasswordLink;
 
     public LogInPage(WebDriver driver) {
         super(driver);
@@ -58,5 +61,11 @@ public class LogInPage extends BasePage {
     public Boolean isPageOpened() {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(logInHeader));
         return logInHeader.getAttribute("innerHTML").equals("Вход");
+    }
+
+    @Step("Кликаем на ссылку 'Восстановить пароль' на странице входа")
+    public RestorePasswordPage clickRestorePasswordLink() {
+        restorePasswordLink.click();
+        return new RestorePasswordPage(driver);
     }
 }
