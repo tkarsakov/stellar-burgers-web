@@ -1,0 +1,131 @@
+[ {
+  "uid" : "92105ce97f2e10ff",
+  "name" : "goToPersonalPageWithoutLogInExpectToSeeLogInPage",
+  "time" : {
+    "start" : 1717058382563,
+    "stop" : 1717058387723,
+    "duration" : 5160
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da6ea39e2c850ac",
+  "name" : "testRegistrationFlowExpectSuccessfulRegistration",
+  "time" : {
+    "start" : 1717058411774,
+    "stop" : 1717058416932,
+    "duration" : 5158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa185e51c5100e71",
+  "name" : "clickOnSectionsExpectCorrectSectionDisplayed[2]",
+  "time" : {
+    "start" : 1717058377163,
+    "stop" : 1717058382558,
+    "duration" : 5395
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0e76abf965f2197",
+  "name" : "logInUsingPersonalPageButtonExpectSuccessfulLogin",
+  "time" : {
+    "start" : 1717058347767,
+    "stop" : 1717058356531,
+    "duration" : 8764
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e66fa5b0ef1dc23a",
+  "name" : "clickOnSectionsExpectCorrectSectionDisplayed[0]",
+  "time" : {
+    "start" : 1717058366003,
+    "stop" : 1717058371781,
+    "duration" : 5778
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae2ca850fb20d206",
+  "name" : "goToPersonalPageThenGoToMainPageExpectToSeeMainPage",
+  "time" : {
+    "start" : 1717058387727,
+    "stop" : 1717058394036,
+    "duration" : 6309
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ce24afcbf799010",
+  "name" : "logInThenLogOutExpectToSeeLogInPage",
+  "time" : {
+    "start" : 1717058394038,
+    "stop" : 1717058401735,
+    "duration" : 7697
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "947f00175856d616",
+  "name" : "logInUsingRegistrationPageLogInLinkExpectSuccessfulLogin",
+  "time" : {
+    "start" : 1717058356533,
+    "stop" : 1717058365979,
+    "duration" : 9446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45b0cd59d2422502",
+  "name" : "logInGoToPersonalPageExpectToSeePersonalPage",
+  "time" : {
+    "start" : 1717058401739,
+    "stop" : 1717058408388,
+    "duration" : 6649
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dae13fc44a21204a",
+  "name" : "testPasswordErrorExpectPasswordErrorAppearing",
+  "time" : {
+    "start" : 1717058408393,
+    "stop" : 1717058411772,
+    "duration" : 3379
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "646b44187059b162",
+  "name" : "clickOnSectionsExpectCorrectSectionDisplayed[1]",
+  "time" : {
+    "start" : 1717058371783,
+    "stop" : 1717058377158,
+    "duration" : 5375
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c0859cf67ab0fb1",
+  "name" : "logInUsingRestorePasswordPageLogInLinkExpectSuccessfulLogin",
+  "time" : {
+    "start" : 1717058324318,
+    "stop" : 1717058336326,
+    "duration" : 12008
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82895d34d6d57579",
+  "name" : "logInFromMainPageLogInButtonExpectSuccessfulLogin",
+  "time" : {
+    "start" : 1717058336422,
+    "stop" : 1717058347759,
+    "duration" : 11337
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

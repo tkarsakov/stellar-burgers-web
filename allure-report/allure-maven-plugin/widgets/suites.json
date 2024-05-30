@@ -1,0 +1,59 @@
+{
+  "total" : 5,
+  "items" : [ {
+    "uid" : "dfc7cbd4d567e35197011990a0b37c06",
+    "name" : "com.intexsoft.stellarburgersweb.LogInTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "98151a940bf33ec43f13bb41961425df",
+    "name" : "com.intexsoft.stellarburgersweb.MainPageTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "08f3b1bbbd925463b2b3e7c3fb711bfe",
+    "name" : "com.intexsoft.stellarburgersweb.PersonalPageTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "c7d8b5dfe9642fc7984f9da83939d3da",
+    "name" : "com.intexsoft.stellarburgersweb.RegistrationTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "c5351712af5cb1ea0b733c75dbeffd16",
+    "name" : "com.intexsoft.stellarburgersweb.PersonalPageNoAuthTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

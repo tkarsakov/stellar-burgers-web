@@ -1,0 +1,200 @@
+{
+  "uid" : "c0e76abf965f2197",
+  "name" : "logInUsingPersonalPageButtonExpectSuccessfulLogin",
+  "fullName" : "com.intexsoft.stellarburgersweb.LogInTest.logInUsingPersonalPageButtonExpectSuccessfulLogin",
+  "historyId" : "cce14028621497083491f0b2c564f72c",
+  "time" : {
+    "start" : 1717058347767,
+    "stop" : 1717058356531,
+    "duration" : 8764
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Регистрация пользователя User{email='chantal.lang@hotmail.com', name='mathew.runte', password='d6c9kkpewuiy'}",
+      "time" : {
+        "start" : 1717058354474,
+        "stop" : 1717058354874,
+        "duration" : 400
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='chantal.lang@hotmail.com', name='mathew.runte', password='d6c9kkpewuiy'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Кликаем на ссылку 'Личный кабинет' в навбаре",
+      "time" : {
+        "start" : 1717058354888,
+        "stop" : 1717058355029,
+        "duration" : 141
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "isUserLoggedIn",
+        "value" : "false"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Вводим почту chantal.lang@hotmail.com на странице логина",
+      "time" : {
+        "start" : 1717058355029,
+        "stop" : 1717058355139,
+        "duration" : 110
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "chantal.lang@hotmail.com"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Вводим пароль d6c9kkpewuiy на странице логина",
+      "time" : {
+        "start" : 1717058355140,
+        "stop" : 1717058355217,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "d6c9kkpewuiy"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажимаем кнопку 'Войти'",
+      "time" : {
+        "start" : 1717058355217,
+        "stop" : 1717058355279,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверяем открыта ли главная страница",
+      "time" : {
+        "start" : 1717058355279,
+        "stop" : 1717058355816,
+        "duration" : 537
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверяем залогинен ли пользователь путем проверки того, какую кнопку он видит на главной странице",
+      "time" : {
+        "start" : 1717058355816,
+        "stop" : 1717058355876,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Удаление текущего пльзователя с токеном Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTgzYjMyOWVkMjgwMDAxYjQxZTgyNSIsImlhdCI6MTcxNzA1ODM1NCwiZXhwIjoxNzE3MDU5NTU0fQ.rQVHPW4AkMS9-nLc4K-4058vc6M5z5P5acPjKATrsZ8",
+      "time" : {
+        "start" : 1717058355876,
+        "stop" : 1717058356358,
+        "duration" : 482
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTgzYjMyOWVkMjgwMDAxYjQxZTgyNSIsImlhdCI6MTcxNzA1ODM1NCwiZXhwIjoxNzE3MDU5NTU0fQ.rQVHPW4AkMS9-nLc4K-4058vc6M5z5P5acPjKATrsZ8"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.intexsoft.stellarburgersweb"
+  }, {
+    "name" : "testClass",
+    "value" : "com.intexsoft.stellarburgersweb.LogInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "logInUsingPersonalPageButtonExpectSuccessfulLogin"
+  }, {
+    "name" : "suite",
+    "value" : "com.intexsoft.stellarburgersweb.LogInTest"
+  }, {
+    "name" : "host",
+    "value" : "TKARSAKOV"
+  }, {
+    "name" : "thread",
+    "value" : "9496@TKARSAKOV.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c0e76abf965f2197.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,98 @@
+{
+  "uid" : "92105ce97f2e10ff",
+  "name" : "goToPersonalPageWithoutLogInExpectToSeeLogInPage",
+  "fullName" : "com.intexsoft.stellarburgersweb.PersonalPageNoAuthTest.goToPersonalPageWithoutLogInExpectToSeeLogInPage",
+  "historyId" : "66b6682c1a602e7ea5989b87997cbe4d",
+  "time" : {
+    "start" : 1717058382563,
+    "stop" : 1717058387723,
+    "duration" : 5160
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Кликаем на ссылку 'Личный кабинет' в навбаре",
+      "time" : {
+        "start" : 1717058387392,
+        "stop" : 1717058387533,
+        "duration" : 141
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "isUserLoggedIn",
+        "value" : "false"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверяем открыта ли страница входа",
+      "time" : {
+        "start" : 1717058387533,
+        "stop" : 1717058387592,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.intexsoft.stellarburgersweb"
+  }, {
+    "name" : "testClass",
+    "value" : "com.intexsoft.stellarburgersweb.PersonalPageNoAuthTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "goToPersonalPageWithoutLogInExpectToSeeLogInPage"
+  }, {
+    "name" : "suite",
+    "value" : "com.intexsoft.stellarburgersweb.PersonalPageNoAuthTest"
+  }, {
+    "name" : "host",
+    "value" : "TKARSAKOV"
+  }, {
+    "name" : "thread",
+    "value" : "9496@TKARSAKOV.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "92105ce97f2e10ff.json",
+  "parameterValues" : [ ]
+}

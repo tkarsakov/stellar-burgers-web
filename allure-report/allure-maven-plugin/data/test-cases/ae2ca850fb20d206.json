@@ -1,0 +1,215 @@
+{
+  "uid" : "ae2ca850fb20d206",
+  "name" : "goToPersonalPageThenGoToMainPageExpectToSeeMainPage",
+  "fullName" : "com.intexsoft.stellarburgersweb.PersonalPageTest.goToPersonalPageThenGoToMainPageExpectToSeeMainPage",
+  "historyId" : "2999c05649c6e18bb3971a29810dde4f",
+  "time" : {
+    "start" : 1717058387727,
+    "stop" : 1717058394036,
+    "duration" : 6309
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Регистрация пользователя User{email='donella.bogan@gmail.com', name='marlena.berge', password='riyplp5frt0squ'}",
+      "time" : {
+        "start" : 1717058391570,
+        "stop" : 1717058392160,
+        "duration" : 590
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='donella.bogan@gmail.com', name='marlena.berge', password='riyplp5frt0squ'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Кликаем на кнопку 'Войти в аккаунт' под конструктором бургеров",
+      "time" : {
+        "start" : 1717058392172,
+        "stop" : 1717058392244,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Вводим почту donella.bogan@gmail.com на странице логина",
+      "time" : {
+        "start" : 1717058392244,
+        "stop" : 1717058392344,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "donella.bogan@gmail.com"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Вводим пароль riyplp5frt0squ на странице логина",
+      "time" : {
+        "start" : 1717058392344,
+        "stop" : 1717058392431,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "riyplp5frt0squ"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажимаем кнопку 'Войти'",
+      "time" : {
+        "start" : 1717058392431,
+        "stop" : 1717058392489,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Кликаем на ссылку 'Личный кабинет' в навбаре",
+      "time" : {
+        "start" : 1717058392489,
+        "stop" : 1717058393109,
+        "duration" : 620
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "isUserLoggedIn",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Кликаем на ссылку 'Конструктор' в навбаре",
+      "time" : {
+        "start" : 1717058393109,
+        "stop" : 1717058393447,
+        "duration" : 338
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверяем открыта ли главная страница",
+      "time" : {
+        "start" : 1717058393447,
+        "stop" : 1717058393464,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Удаление текущего пльзователя с токеном Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTgzYjU4OWVkMjgwMDAxYjQxZTgyYiIsImlhdCI6MTcxNzA1ODM5MiwiZXhwIjoxNzE3MDU5NTkyfQ.FsJNWiSa3ZcO3HCs7ICoXL4AKDw7ZDj0EkHkWGiG7k8",
+      "time" : {
+        "start" : 1717058393464,
+        "stop" : 1717058393885,
+        "duration" : 421
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTgzYjU4OWVkMjgwMDAxYjQxZTgyYiIsImlhdCI6MTcxNzA1ODM5MiwiZXhwIjoxNzE3MDU5NTkyfQ.FsJNWiSa3ZcO3HCs7ICoXL4AKDw7ZDj0EkHkWGiG7k8"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.intexsoft.stellarburgersweb"
+  }, {
+    "name" : "testClass",
+    "value" : "com.intexsoft.stellarburgersweb.PersonalPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "goToPersonalPageThenGoToMainPageExpectToSeeMainPage"
+  }, {
+    "name" : "suite",
+    "value" : "com.intexsoft.stellarburgersweb.PersonalPageTest"
+  }, {
+    "name" : "host",
+    "value" : "TKARSAKOV"
+  }, {
+    "name" : "thread",
+    "value" : "9496@TKARSAKOV.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ae2ca850fb20d206.json",
+  "parameterValues" : [ ]
+}

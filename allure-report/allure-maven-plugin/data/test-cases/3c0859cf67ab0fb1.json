@@ -1,0 +1,227 @@
+{
+  "uid" : "3c0859cf67ab0fb1",
+  "name" : "logInUsingRestorePasswordPageLogInLinkExpectSuccessfulLogin",
+  "fullName" : "com.intexsoft.stellarburgersweb.LogInTest.logInUsingRestorePasswordPageLogInLinkExpectSuccessfulLogin",
+  "historyId" : "273692e2ebfd7457a875f763534d5312",
+  "time" : {
+    "start" : 1717058324318,
+    "stop" : 1717058336326,
+    "duration" : 12008
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Регистрация пользователя User{email='tran.nikolaus@hotmail.com', name='ryan.okeefe', password='hzjir5mfarlz9n'}",
+      "time" : {
+        "start" : 1717058330164,
+        "stop" : 1717058333376,
+        "duration" : 3212
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "User{email='tran.nikolaus@hotmail.com', name='ryan.okeefe', password='hzjir5mfarlz9n'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Кликаем на кнопку 'Войти в аккаунт' под конструктором бургеров",
+      "time" : {
+        "start" : 1717058334395,
+        "stop" : 1717058334485,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Кликаем на ссылку 'Восстановить пароль' на странице входа",
+      "time" : {
+        "start" : 1717058334485,
+        "stop" : 1717058334563,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Кликаем на ссылку 'Войти' под формой восстановления пароля",
+      "time" : {
+        "start" : 1717058334563,
+        "stop" : 1717058334636,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Вводим почту tran.nikolaus@hotmail.com на странице логина",
+      "time" : {
+        "start" : 1717058334637,
+        "stop" : 1717058334767,
+        "duration" : 130
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "tran.nikolaus@hotmail.com"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Вводим пароль hzjir5mfarlz9n на странице логина",
+      "time" : {
+        "start" : 1717058334768,
+        "stop" : 1717058334876,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "hzjir5mfarlz9n"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажимаем кнопку 'Войти'",
+      "time" : {
+        "start" : 1717058334877,
+        "stop" : 1717058334944,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверяем открыта ли главная страница",
+      "time" : {
+        "start" : 1717058334945,
+        "stop" : 1717058335487,
+        "duration" : 542
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверяем залогинен ли пользователь путем проверки того, какую кнопку он видит на главной странице",
+      "time" : {
+        "start" : 1717058335488,
+        "stop" : 1717058335559,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Удаление текущего пльзователя с токеном Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTgzYjFkOWVkMjgwMDAxYjQxZTgxZiIsImlhdCI6MTcxNzA1ODMzMywiZXhwIjoxNzE3MDU5NTMzfQ.dyaUjuiAOyMhRs7OjHc1R-wogNgQniHMfV1LtrtWbUk",
+      "time" : {
+        "start" : 1717058335560,
+        "stop" : 1717058336168,
+        "duration" : 608
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTgzYjFkOWVkMjgwMDAxYjQxZTgxZiIsImlhdCI6MTcxNzA1ODMzMywiZXhwIjoxNzE3MDU5NTMzfQ.dyaUjuiAOyMhRs7OjHc1R-wogNgQniHMfV1LtrtWbUk"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.intexsoft.stellarburgersweb"
+  }, {
+    "name" : "testClass",
+    "value" : "com.intexsoft.stellarburgersweb.LogInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "logInUsingRestorePasswordPageLogInLinkExpectSuccessfulLogin"
+  }, {
+    "name" : "suite",
+    "value" : "com.intexsoft.stellarburgersweb.LogInTest"
+  }, {
+    "name" : "host",
+    "value" : "TKARSAKOV"
+  }, {
+    "name" : "thread",
+    "value" : "9496@TKARSAKOV.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3c0859cf67ab0fb1.json",
+  "parameterValues" : [ ]
+}

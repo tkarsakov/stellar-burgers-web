@@ -7,7 +7,7 @@ import com.intexsoft.stellarburgersweb.page.RestorePasswordPage;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class LogInTest extends BaseTest {
+public class LogInTest extends BaseAuthTest {
 
     @Test
     public void logInFromMainPageLogInButtonExpectSuccessfulLogin() {

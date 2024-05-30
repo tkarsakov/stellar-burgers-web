@@ -1,0 +1,165 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.intexsoft.stellarburgersweb",
+    "children" : [ {
+      "name" : "logInUsingRestorePasswordPageLogInLinkExpectSuccessfulLogin",
+      "uid" : "3c0859cf67ab0fb1",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058324318,
+        "stop" : 1717058336326,
+        "duration" : 12008
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "logInFromMainPageLogInButtonExpectSuccessfulLogin",
+      "uid" : "82895d34d6d57579",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058336422,
+        "stop" : 1717058347759,
+        "duration" : 11337
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "logInUsingPersonalPageButtonExpectSuccessfulLogin",
+      "uid" : "c0e76abf965f2197",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058347767,
+        "stop" : 1717058356531,
+        "duration" : 8764
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "logInUsingRegistrationPageLogInLinkExpectSuccessfulLogin",
+      "uid" : "947f00175856d616",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058356533,
+        "stop" : 1717058365979,
+        "duration" : 9446
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "clickOnSectionsExpectCorrectSectionDisplayed[0]",
+      "uid" : "e66fa5b0ef1dc23a",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058366003,
+        "stop" : 1717058371781,
+        "duration" : 5778
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "clickOnSectionsExpectCorrectSectionDisplayed[1]",
+      "uid" : "646b44187059b162",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058371783,
+        "stop" : 1717058377158,
+        "duration" : 5375
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "clickOnSectionsExpectCorrectSectionDisplayed[2]",
+      "uid" : "fa185e51c5100e71",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058377163,
+        "stop" : 1717058382558,
+        "duration" : 5395
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "goToPersonalPageWithoutLogInExpectToSeeLogInPage",
+      "uid" : "92105ce97f2e10ff",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058382563,
+        "stop" : 1717058387723,
+        "duration" : 5160
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "goToPersonalPageThenGoToMainPageExpectToSeeMainPage",
+      "uid" : "ae2ca850fb20d206",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058387727,
+        "stop" : 1717058394036,
+        "duration" : 6309
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "logInThenLogOutExpectToSeeLogInPage",
+      "uid" : "2ce24afcbf799010",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058394038,
+        "stop" : 1717058401735,
+        "duration" : 7697
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "logInGoToPersonalPageExpectToSeePersonalPage",
+      "uid" : "45b0cd59d2422502",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058401739,
+        "stop" : 1717058408388,
+        "duration" : 6649
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testPasswordErrorExpectPasswordErrorAppearing",
+      "uid" : "dae13fc44a21204a",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058408393,
+        "stop" : 1717058411772,
+        "duration" : 3379
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testRegistrationFlowExpectSuccessfulRegistration",
+      "uid" : "da6ea39e2c850ac",
+      "parentUid" : "facc13e3c316bac8df4a5987a483cf2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717058411774,
+        "stop" : 1717058416932,
+        "duration" : 5158
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.intexsoft.stellarburgersweb"
+  } ]
+}

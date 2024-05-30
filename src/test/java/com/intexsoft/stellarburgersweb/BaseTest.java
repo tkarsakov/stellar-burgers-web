@@ -3,9 +3,7 @@ package com.intexsoft.stellarburgersweb;
 import com.intexsoft.stellarburgersweb.api.Steps;
 import com.intexsoft.stellarburgersweb.model.User;
 import com.intexsoft.stellarburgersweb.service.PropertiesService;
-import io.restassured.response.Response;
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
@@ -18,23 +16,13 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.Optional;
 
 import static com.intexsoft.stellarburgersweb.service.PropertiesFile.CONFIG;
 
 public abstract class BaseTest {
-    private final Steps steps = new Steps();
+    protected final Steps steps = new Steps();
     protected WebDriver driver;
     protected User createdUser;
-    private String accessToken;
-
-    @Before
-    public void setUp() {
-        createdUser = User.buildFakeUser();
-        Response response = steps.registerUser(createdUser);
-        Assert.assertEquals("Unexpected response to user creation request", 200, response.statusCode());
-        accessToken = response.path("accessToken");
-    }
 
     @Before
     public void driverSetUp() {
@@ -70,11 +58,6 @@ public abstract class BaseTest {
 
     @After
     public void tearDown() {
-        Optional<Response> responseOptional = steps.deleteCreatedUser(accessToken);
-        if (responseOptional.isPresent()) {
-            Response response = responseOptional.get();
-            Assert.assertEquals("Unexpected response to user deletion request", response.statusCode(), 202);
-        }
         driver.quit();
     }
 }
