@@ -1,5 +1,6 @@
 package com.intexsoft.stellarburgersweb;
 
+import com.intexsoft.stellarburgersweb.hooks.BaseTest;
 import com.intexsoft.stellarburgersweb.page.LogInPage;
 import com.intexsoft.stellarburgersweb.page.MainPage;
 import org.junit.Assert;

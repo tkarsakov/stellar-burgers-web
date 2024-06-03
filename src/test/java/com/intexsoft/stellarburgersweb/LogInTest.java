@@ -1,5 +1,6 @@
 package com.intexsoft.stellarburgersweb;
 
+import com.intexsoft.stellarburgersweb.hooks.BaseAuthTest;
 import com.intexsoft.stellarburgersweb.page.LogInPage;
 import com.intexsoft.stellarburgersweb.page.MainPage;
 import com.intexsoft.stellarburgersweb.page.RegisterPage;

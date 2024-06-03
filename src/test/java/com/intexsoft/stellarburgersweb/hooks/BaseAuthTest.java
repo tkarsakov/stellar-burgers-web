@@ -1,4 +1,4 @@
-package com.intexsoft.stellarburgersweb;
+package com.intexsoft.stellarburgersweb.hooks;
 
 import com.intexsoft.stellarburgersweb.model.User;
 import io.restassured.response.Response;

@@ -1,5 +1,6 @@
 package com.intexsoft.stellarburgersweb;
 
+import com.intexsoft.stellarburgersweb.hooks.BaseTest;
 import com.intexsoft.stellarburgersweb.model.User;
 import com.intexsoft.stellarburgersweb.page.LogInPage;
 import com.intexsoft.stellarburgersweb.page.MainPage;

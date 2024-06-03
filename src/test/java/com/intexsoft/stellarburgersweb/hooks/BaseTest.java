@@ -1,4 +1,4 @@
-package com.intexsoft.stellarburgersweb;
+package com.intexsoft.stellarburgersweb.hooks;
 
 import com.intexsoft.stellarburgersweb.api.Steps;
 import com.intexsoft.stellarburgersweb.model.User;
