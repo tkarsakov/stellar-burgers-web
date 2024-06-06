@@ -1,0 +1,119 @@
+{
+  "uid" : "646b44187059b162",
+  "name" : "clickOnSectionsExpectCorrectSectionDisplayed[1]",
+  "fullName" : "com.intexsoft.stellarburgersweb.MainPageTest.clickOnSectionsExpectCorrectSectionDisplayed[1]",
+  "historyId" : "db31a2db5fdc561eaeb54595b6dfeb1e",
+  "time" : {
+    "start" : 1717058371783,
+    "stop" : 1717058377158,
+    "duration" : 5375
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Кликаем на секцию FILLING",
+      "time" : {
+        "start" : 1717058374897,
+        "stop" : 1717058376970,
+        "duration" : 2073
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "constructorSection",
+        "value" : "FILLING"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверям выбрана ли секция FILLING",
+      "time" : {
+        "start" : 1717058376971,
+        "stop" : 1717058376998,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "section",
+        "value" : "FILLING"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Сверяем текст элемента, который ниже секции (должен быть заголовок секции)",
+      "time" : {
+        "start" : 1717058376998,
+        "stop" : 1717058377012,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "section",
+        "value" : "FILLING"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.intexsoft.stellarburgersweb"
+  }, {
+    "name" : "testClass",
+    "value" : "com.intexsoft.stellarburgersweb.MainPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "clickOnSectionsExpectCorrectSectionDisplayed[1]"
+  }, {
+    "name" : "suite",
+    "value" : "com.intexsoft.stellarburgersweb.MainPageTest"
+  }, {
+    "name" : "host",
+    "value" : "TKARSAKOV"
+  }, {
+    "name" : "thread",
+    "value" : "9496@TKARSAKOV.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "646b44187059b162.json",
+  "parameterValues" : [ ]
+}
